@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    animation: Mover 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2,p{
+    animation: Mover 1.5s ease-in-out;
+}
+
+h2 {
+    color: #1a1a1a;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.Login {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ,transform 0.3s;
+}
+
+
+/*animaciones waza 1*/
+.button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+@keyframes Mover{
+    from{
+        opacity: 0;
+        transform: translateY();
+    }
+}

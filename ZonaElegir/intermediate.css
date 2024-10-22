@@ -1,0 +1,66 @@
+body 
+    {     
+        font-family: Arial, sans-serif;
+        background: url(b1.jpg) no-repeat center center fixed;     
+        background-size: cover;     
+        color: #fff;     
+        display: flex;     
+        justify-content: center;     
+        align-items: center;     
+        height: 100vh;     
+        margin: 0; 
+    }  
+        
+.contenedro5 {     
+    text-align: center;     
+    background: rgba(0, 0, 0, 0.7);     
+    padding: 20px;     
+    border-radius: 10px;    
+    width: 400px; }  .message p {     
+    font-size: 20px;     
+    line-height: 1.5;
+}  
+    
+.boton2 {     
+    padding: 10px 20px;     
+    margin-top: 20px;     
+    border: none;     
+    border-radius: 5px;     
+    cursor: pointer;     
+    font-size: 16px;     
+    background-color: #444;     
+    color: #fff;     
+    transition: 
+    background-color 0.3s, 
+    transform 0.3s;     
+    display: none;  }  
+
+.boton2:hover {     
+    background-color: #666;     
+    transform: scale(1.05); }  
+    
+    
+@keyframes teclado {     
+    from { width: 0; }     
+    to { width: 100%; } 
+} 
+
+
+
+img {
+    width: 200px;
+    height: auto;
+    animation: flotar 1s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
