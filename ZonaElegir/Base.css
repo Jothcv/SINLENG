@@ -46,6 +46,7 @@ body {
     opacity: 0; 
     transform: translateX(-20px); 
     animation: deslisamiento 3s forwards; 
+    
 }
 
 .boton2:nth-child(1) { animation-delay: 1s; } 

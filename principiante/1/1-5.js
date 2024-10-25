@@ -14,5 +14,6 @@ function comprobarRespuestacorrecta(button, respuestausuario) {
 }
 
 function siguiente3() {
-    window.location.href = '../1/NivelTerminado.html';
+    window.location.href = '/principiante/1/NivelTerminado.html';
+    
 }

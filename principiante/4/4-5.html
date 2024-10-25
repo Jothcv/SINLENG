@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINLENG</title>
+    <link rel="icon" href="/ZonaElegir/nivel2.ico">
+    <link rel="stylesheet" href="4-5.css">
+</head>
+<body>
+    <div class="contenedor_juego">
+        <div class="estadisticas">
+            <div class="vidas">Vidas: <span id="vidas">5</span></div>
+            <div class="nivel">Nivel: <span id="nivel">1</span>/5</div>
+        </div>
+
+        <div class="contenedor_tiempo">
+            <div id="barra_tiempo" class="barra_tiempo"></div>
+        </div>
+
+        <div id="contenido_juego">
+            <div class="contenedor_pregunta">
+                <h2 id="pregunta">¿Qué es esto?</h2>
+                <div class="imagen_temporal">
+                    <video id="video_nivel" width="200" height="200" controls autoplay></video>
+                </div>
+            </div>
+
+            <div class="opciones">
+                <button onclick="verificarRespuesta(0)">Opción 1</button>
+                <button onclick="verificarRespuesta(1)">Opción 2</button>
+                <button onclick="verificarRespuesta(2)">Opción 3</button>
+            </div>
+        </div>
+
+        <div id="fin_juego">
+            <h2 class="mensaje_juego">¡Juego Terminado!</h2>
+            <button onclick="reiniciarJuego()">Jugar de Nuevo</button>
+        </div>
+
+        <div id="victoria">
+            <h2 class="mensaje_juego mensaje_exito">¡Felicitaciones! ¡Has Ganado!</h2>
+            <button onclick="reiniciarJuego()">Jugar de Nuevo</button>
+            <a href="ggs4.html"><button>siguiente nivel</button></a>
+        </div>
+    </div>
+    
+<script src="4-5.js"></script>
+</body>
+</html>

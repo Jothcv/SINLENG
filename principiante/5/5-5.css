@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url(/principiante/3/ot.jpeg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-size:cover;
+    
+}
+
+.contenedor_juego {
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(26, 3, 90, 0.445);
+    width: 100%;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+
+}
+
+.estadisticas {
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgb(256, 256, 256, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+.contenedor_tiempo {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(125deg,#ce0458,#0568d1,white);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.barra_tiempo {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #ce0458,#0568d1,white);
+    transition: width 0.1s linear;
+}
+
+.contenedor_pregunta {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.imagen_temporal {
+    width: 200px;
+    height: 200px;
+    background: #ddd;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;   
+}
+
+.opciones {
+    display: grid;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.02);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.vidas {
+    color: black;
+    font-family: cursive;
+}
+
+.nivel {
+    color: black;
+    font-family: cursive;
+}
+
+#fin_juego, #victoria {
+    text-align: center;
+    display: none;
+}
+
+.mensaje_juego {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: cursive;
+}
+
+.mensaje_exito {
+    color: black;
+}
+
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    25%{
+        opacity: 1.25;
+    }
+    50% { opacity: 0.5; }
+
+    100% { opacity: 1; }
+}
+
+.aviso_tiempo {
+    animation: parpadeo 0.2s infinite;
+}

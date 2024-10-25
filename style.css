@@ -51,6 +51,7 @@ p {
 .Login {
     text-align: center;
     margin-top: 2rem;
+    
 }
 
 .button {
@@ -61,14 +62,17 @@ p {
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
-    transition: background-color 0.3s ,transform 0.3s;
-}
+    transition: background-color 0.3s ,transform .3s;
+} 
 
 
 /*animaciones waza 1*/
 .button:hover {
-    background-color: #333;
-    transform: scale(1.05);
+    background-color: #272a42;
+    box-shadow: 0 0 10px rgb(1, 1, 122);
+    transform: scale(1.10);
+
+    
 }
 
 @keyframes Mover{
